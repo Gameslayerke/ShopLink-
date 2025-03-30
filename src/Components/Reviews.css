@@ -1,0 +1,354 @@
+/* Reviews Component Styles */
+
+.reviews-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reviews-container h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 24px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  .reviews-container h2 {
+    color: #34495e;
+    margin: 20px 0 15px;
+    font-size: 20px;
+  }
+  
+  .reviews-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .search-container {
+    flex-grow: 1;
+    max-width: 400px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .filter-forms {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .filter-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .filter-input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .btn-view-all, .btn-filter, .btn-view, .btn-edit, .btn-delete, .btn-back, .btn-save, .btn-cancel {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-view-all {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .btn-view-all:hover {
+    background-color: #2980b9;
+  }
+  
+  .btn-filter {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  .btn-filter:hover {
+    background-color: #27ae60;
+  }
+  
+  .btn-view {
+    background-color: #3498db;
+    color: white;
+    margin-right: 5px;
+  }
+  
+  .btn-view:hover {
+    background-color: #2980b9;
+  }
+  
+  .btn-edit {
+    background-color: #f39c12;
+    color: white;
+    margin-right: 5px;
+  }
+  
+  .btn-edit:hover {
+    background-color: #d35400;
+  }
+  
+  .btn-delete {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .btn-delete:hover {
+    background-color: #c0392b;
+  }
+  
+  .btn-back {
+    background-color: #95a5a6;
+    color: white;
+    margin-left: 10px;
+  }
+  
+  .btn-back:hover {
+    background-color: #7f8c8d;
+  }
+  
+  .btn-save {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  .btn-save:hover {
+    background-color: #27ae60;
+  }
+  
+  .btn-cancel {
+    background-color: #95a5a6;
+    color: white;
+    margin-left: 10px;
+  }
+  
+  .btn-cancel:hover {
+    background-color: #7f8c8d;
+  }
+  
+  .reviews-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reviews-table th, .reviews-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .reviews-table th {
+    background-color: #f2f2f2;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .reviews-table tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .single-review-view, .edit-review-view {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .review-details p {
+    margin: 10px 0;
+    font-size: 15px;
+  }
+  
+  .review-details strong {
+    color: #2c3e50;
+    margin-right: 5px;
+  }
+  
+  .review-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .review-preview {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .star-rating {
+    display: inline-block;
+  }
+  
+  .star {
+    color: #ddd;
+    font-size: 18px;
+  }
+  
+  .star.filled {
+    color: #f1c40f;
+  }
+  
+  .edit-review-view form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .form-group label {
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  .form-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+  
+  .form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .reviews-stats {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .reviews-stats h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 18px;
+  }
+  
+  .reviews-stats p {
+    margin: 8px 0;
+    font-size: 15px;
+  }
+  
+  .rating-distribution {
+    margin-top: 15px;
+  }
+  
+  .rating-distribution h4 {
+    margin-bottom: 10px;
+    color: #34495e;
+  }
+  
+  .distribution-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .distribution-bar-container {
+    flex-grow: 1;
+    height: 20px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .distribution-bar {
+    height: 100%;
+    background-color: #2ecc71;
+    border-radius: 10px;
+  }
+  
+  .loading-spinner {
+    text-align: center;
+    padding: 30px;
+    font-size: 16px;
+    color: #7f8c8d;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    background-color: #fadbd8;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border-left: 4px solid #e74c3c;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .reviews-controls {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .search-container {
+      max-width: 100%;
+      width: 100%;
+    }
+    
+    .filter-forms {
+      flex-direction: column;
+    }
+    
+    .filter-form {
+      width: 100%;
+    }
+    
+    .filter-input {
+      flex-grow: 1;
+    }
+    
+    .reviews-table {
+      display: block;
+      overflow-x: auto;
+    }
+    
+    .review-actions {
+      flex-wrap: wrap;
+    }
+  }
